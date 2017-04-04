@@ -8,8 +8,8 @@
     "lint:html": "htmlhint index.html",
     "lint:sass": "stylelint \"source/scss/*.scss\"",
     "lint:test": "standard clicky.js",
-    "lint:node": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
-    "build": "run-s lint:*",
+    "node-sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
+    "build": "run-s lint:* node-sass",
     "deploy": "surge --project . --domain https://storingo-kg-tgc7noax99ajvzzg.surge.sh/"
   },
   "devDependencies": {
