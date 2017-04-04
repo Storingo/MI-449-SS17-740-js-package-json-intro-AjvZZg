@@ -10,8 +10,7 @@
     "lint:test": "standard clicky.js",
     "lint:node": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
     "build": "run-s lint:*",
-    "deploy:surge": "surge --project . --domain sassy-project.surge.sh",
-    "deploy": "run-s lint:* deploy:surge"
+    "deploy": "surge --project . --domain https://storingo-kg-tgc7noax99ajvzzg.surge.sh/"
   },
   "devDependencies": {
     "htmlhint": "^0.9.13",

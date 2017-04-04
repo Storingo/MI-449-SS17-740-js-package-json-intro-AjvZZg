@@ -1,3 +1,7 @@
+$c-1: #555;
+$font: 'Courier New', Courier, monospace;
+$standard-border: 1px solid $c-1;
+
 body {
   margin: 0;
   background-color: #333;
@@ -10,12 +14,12 @@ table.menu {
   left: 0;
   border-top: 0;
   border-left: 0;
-  border-right: 1px solid #555;
-  border-bottom: 1px solid #555;
+  border-right: $standard-border;
+  border-bottom: $standard-border;
   border-bottom-right-radius: 6px;
   background-color: #777;
   box-shadow: #000 0 0 15px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: $font;
 }
 
 table.menu h1 {
@@ -32,10 +36,10 @@ table.menu button {
   background-color: #ccf;
   color: #111;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: $font;
   font-weight: normal;
   font-size: 12px;
-  border: 1px solid #555;
+  border: $standard-border;
   transition: width 0.5s, background-color 0.5s;
   border-radius: 3px;
 }
@@ -65,7 +69,7 @@ table.menu td.result {
   position: absolute;
   border-radius: 50%;
   background-color: #aaf;
-  border: 1px solid #555;
+  border: $standard-border;
   box-shadow: #000 0 0 15px;
 }
 
